@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "essays",
+  "info": {
+    "name": "Essays",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "essays",
+      "dominant": true
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "users_permissions_users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "essays",
+      "dominant": true
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

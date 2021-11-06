@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "forms",
+  "info": {
+    "name": "Forms"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "title",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "externalURL",
+        "default"
+      ],
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "tags": {
+      "via": "forms",
+      "collection": "tag"
+    }
+  }
+}

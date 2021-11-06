@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "name": "tag"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "forms": {
+      "collection": "forms",
+      "via": "tags",
+      "dominant": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "essays": {
+      "via": "tags",
+      "collection": "essays"
+    }
+  }
+}
